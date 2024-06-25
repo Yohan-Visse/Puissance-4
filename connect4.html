@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connect4.css">
+    <title>Puissance 4</title>
+</head>
+<body>
+    <label for="columns">Nombre de colonnes:</label>
+    <input type="number" id="columns" min="4" value="7">
+    <label for="rows">Nombre de lignes:</label>
+    <input type="number" id="rows" min="4" value="6">
+
+    <div>
+        <label for="player1Name">Nom du joueur 1:</label>
+        <input type="text" id="player1Name" value="Joueur 1">
+        <label for="player1Color">Couleur du joueur 1:</label>
+        <input type="color" id="player1Color" value="#ff0000">
+    </div>
+    <div>
+        <label for="player2Name">Nom du joueur 2:</label>
+        <input type="text" id="player2Name" value="Joueur 2">
+        <label for="player2Color">Couleur du joueur 2:</label>
+        <input type="color" id="player2Color" value="#0000FF">
+    </div>
+    <div class="players-info" id="players-info"></div>
+    <button onclick="startGame()">Commencer le jeu</button>
+
+    <div id="current-player-info"></div>
+    <div class="board" id="board"></div>
+    <div class="scoreboard" id="scoreboard"></div>
+    <script src="connect4.js"></script>
+</body>
+</html>
